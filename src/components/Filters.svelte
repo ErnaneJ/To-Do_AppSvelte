@@ -22,7 +22,7 @@
 </script>
 
 <div class="filters">
-  <button class={$filter == "all" ? "active" : ""} on:click={() => $filter = "all"}>All {allTasks !=0 ? "("+allTasks+")": ''}</button>
-  <button class={$filter == "completed" ? "active" : ""} on:click={() => $filter = "completed"}>Completed {completedTasks !=0 ? "("+completedTasks+")": ''}</button>
-  <button class={$filter == "incomplete" ? "active" : ""} on:click={() => $filter = "incomplete"}>Incomplete {incompleteTasks !=0 ? "("+incompleteTasks+")": ''}</button>
+  <button id ="all"class={$filter == "all" ? "active" : ""} on:click={() => $filter = "all"}>All {allTasks !=0 ? "("+allTasks+")": ''}</button>
+  <button id="completed"class={$filter == "completed" ? "active" : ""} on:click={() => $filter = "completed"}>Completed {completedTasks !=0 ? "("+completedTasks+")": ''}</button>
+  <button id="incomplete"class={$filter == "incomplete" ? "active" : ""} on:click={() => $filter = "incomplete"}>Incomplete {incompleteTasks !=0 ? "("+incompleteTasks+")": ''}</button>
 </div>

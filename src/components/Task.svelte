@@ -22,12 +22,12 @@
     <h4>{task.titleTask}</h4>
     <div class="btn-group">
         {#if $filter=='all'}
-            <button class="{task.status=='completed'?'active':''}" on:click={()=>markComplete(index)}>&#10004</button>
-            <button on:click={()=>{removeTask(index)}}>&#10006;</button>
+            <button id="complete{index}" class="{task.status=='completed'?'active':''}" on:click={()=>markComplete(index)}>&#10004</button>
+            <button id="remove{index}" on:click={()=>{removeTask(index)}}>&#10006;</button>
         {:else if $filter=='completed'}
-            <button on:click={()=>{removeTask(index)}}>&#10006;</button>
+            <button id="remove{index}" on:click={()=>{removeTask(index)}}>&#10006;</button>
         {:else}
-            <button class="{task.status=='completed'?'active':''}" on:click={()=>markComplete(index)}>&#10004</button>
+            <button id="complete{index}" class="{task.status=='completed'?'active':''}" on:click={()=>markComplete(index)}>&#10004</button>
         {/if}
     </div>
 </div>
