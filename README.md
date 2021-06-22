@@ -63,5 +63,5 @@ $ ./node_modules/.bin/cypress open
 
 <p align="center">
 Developed with ❤ by <a target="_blank" href="https://ernanej.github.io/my-linktree/">Ernane Ferreira</a>. 👋🏻<br/>
-<small>Project developed with a personal and educational focus.<small>
+<small>Project carried out in support of the company  <a target="_blank" href="https://www.seguroviagem.srv.br/">Real Seguro Viagem</a> in its internship process. <small>
 </p>
